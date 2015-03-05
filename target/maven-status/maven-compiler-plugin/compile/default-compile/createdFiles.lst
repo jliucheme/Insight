@@ -1,0 +1,4 @@
+coding/data/insight/WCMain.class
+coding/data/insight/WordCount$Reduce.class
+coding/data/insight/WordCount.class
+coding/data/insight/WordCount$Map.class
