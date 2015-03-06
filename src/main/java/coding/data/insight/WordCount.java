@@ -33,7 +33,8 @@ public class WordCount extends Configured implements Tool {
 		protected void map(Object key, Text value, Context context)
 				throws IOException, InterruptedException {
 
-			StringTokenizer tokenizer = new StringTokenizer(value.toString(), " \t\n\r\f\",.:;?!-_*{}[]()'");
+			StringTokenizer tokenizer = new StringTokenizer(value.toString(),
+                                                            " \t\n\r\f\",.:;?!#$%&^@+-_*/={}[]()<>`~'1234567890");
 			while (tokenizer.hasMoreTokens()) {
 				String token = tokenizer.nextToken().toLowerCase().trim();
 				word.set(token);
